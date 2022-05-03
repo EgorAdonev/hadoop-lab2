@@ -20,7 +20,3 @@
 В новом терминале в папке scripts выполнить `./startHadoopContainer.sh hadoop-psql` 
 
 `./start.sh database_name`
-
-### Cхема взаимодействия компонентов
-![Scheme](scheme.png)
-
