@@ -67,7 +67,7 @@ public class AvgPerGroupUserCounter {
         });
         JavaPairRDD<String,Integer> grouped = msg.union(msg2);
 
-        // Группирует по значениям часа и уровня логирования Group by sender
+        // Группирует по значениям groupMap, user1 , user2
         JavaPairRDD<String, Integer> t = grouped.reduceByKey((a,b) -> {
            return a + b;
         });
