@@ -23,3 +23,6 @@
 
 ### Cхема взаимодействия компонентов
 ![IMG_4374](https://user-images.githubusercontent.com/90069453/168916373-be828c3b-db57-4035-b6b9-8c0e3482b5b1.jpg)
+
+### Hadoop Result
+![image](https://user-images.githubusercontent.com/90069453/170153695-ee476e9f-1e7e-4c9b-9898-9d228db5050a.png)
