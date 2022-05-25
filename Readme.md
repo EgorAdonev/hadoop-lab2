@@ -22,10 +22,5 @@
 `./start.sh database_name`
 
 ### Cхема взаимодействия компонентов
-![IMG_4374](https://user-images.githubusercontent.com/90069453/168916373-be828c3b-db57-4035-b6b9-8c0e3482b5b1.jpg)
-
-### Result Run Success
-![image](https://user-images.githubusercontent.com/90069453/170155032-dd1c995a-a6ef-4f46-931a-d8bbf2b69550.png)
-
-
+![Scheme](scheme.png)
 
