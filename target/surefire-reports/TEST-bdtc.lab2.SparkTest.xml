@@ -1,0 +1,528 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="4" failures="0" name="bdtc.lab2.SparkTest" time="4.907" errors="4" skipped="0">
+  <properties>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.322.b06-1.el7_9.x86_64/jre/lib/amd64"/>
+    <property name="java.vm.version" value="25.322-b06"/>
+    <property name="java.vm.vendor" value="Red Hat, Inc."/>
+    <property name="maven.multiModuleProjectDirectory" value="/root/lab2"/>
+    <property name="java.vendor.url" value="https://www.redhat.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/root/lab2/scripts"/>
+    <property name="java.runtime.version" value="1.8.0_322-b06"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.322.b06-1.el7_9.x86_64/jre/lib/endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Linux"/>
+    <property name="classworlds.conf" value="/opt/maven/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib"/>
+    <property name="maven.conf" value="/opt/maven/conf"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="3.10.0-1160.62.1.el7.x86_64"/>
+    <property name="library.jansi.path" value="/opt/maven/lib/jansi-native"/>
+    <property name="user.home" value="/root"/>
+    <property name="user.timezone" value="America/Los_Angeles"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="root"/>
+    <property name="java.class.path" value="/opt/maven/boot/plexus-classworlds-2.6.0.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.322.b06-1.el7_9.x86_64/jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher package -f ../pom.xml"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_322"/>
+    <property name="java.ext.dirs" value="/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.322.b06-1.el7_9.x86_64/jre/lib/ext:/usr/java/packages/lib/ext"/>
+    <property name="securerandom.source" value="file:/dev/./urandom"/>
+    <property name="sun.boot.class.path" value="/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.322.b06-1.el7_9.x86_64/jre/lib/resources.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.322.b06-1.el7_9.x86_64/jre/lib/rt.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.322.b06-1.el7_9.x86_64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.322.b06-1.el7_9.x86_64/jre/lib/jsse.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.322.b06-1.el7_9.x86_64/jre/lib/jce.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.322.b06-1.el7_9.x86_64/jre/lib/charsets.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.322.b06-1.el7_9.x86_64/jre/lib/jfr.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.322.b06-1.el7_9.x86_64/jre/classes"/>
+    <property name="java.vendor" value="Red Hat, Inc."/>
+    <property name="maven.home" value="/opt/maven"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="https://bugzilla.redhat.com/enter_bug.cgi?product=Red%20Hat%20Enterprise%20Linux%207&amp;component=java-1.8.0-openjdk"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="gnome"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase classname="bdtc.lab2.SparkTest" name="testThreeLogs" time="4.641">
+    <error message="cannot resolve &apos;named_struct()&apos; due to data type mismatch: input to function named_struct requires at least one argument;;
+&apos;SerializeFromObject [if (isnull(assertnotnull(input[0, bdtc.lab2.UserRecord, true]).getDate)) null else named_struct() AS date#15, staticinvoke(class org.apache.spark.unsafe.types.UTF8String, StringType, fromString, assertnotnull(input[0, bdtc.lab2.UserRecord, true]).getMsg, true, false) AS msg#16, staticinvoke(class org.apache.spark.unsafe.types.UTF8String, StringType, fromString, assertnotnull(input[0, bdtc.lab2.UserRecord, true]).getReceiverUser, true, false) AS receiverUser#17, staticinvoke(class org.apache.spark.unsafe.types.UTF8String, StringType, fromString, assertnotnull(input[0, bdtc.lab2.UserRecord, true]).getSenderUser, true, false) AS senderUser#18]
++- MapElements bdtc.lab2.AvgPerGroupUserCounter$$Lambda$26/1794893473@42c54bad, class java.lang.String, [StructField(value,StringType,true)], obj#14: bdtc.lab2.UserRecord
+   +- DeserializeToObject cast(value#7 as string).toString, obj#13: java.lang.String
+      +- AnalysisBarrier
+            +- SerializeFromObject [staticinvoke(class org.apache.spark.unsafe.types.UTF8String, StringType, fromString, input[0, java.lang.String, true], true, false) AS value#7]
+               +- MapElements bdtc.lab2.AvgPerGroupUserCounter$$Lambda$25/1415835701@2e3f324e, class java.lang.String, [StructField(value,StringType,true)], obj#6: java.lang.String
+                  +- DeserializeToObject cast(value#2 as string).toString, obj#5: java.lang.String
+                     +- SerializeFromObject [staticinvoke(class org.apache.spark.unsafe.types.UTF8String, StringType, fromString, input[0, java.lang.String, true], true, false) AS value#2]
+                        +- ExternalRDD [obj#1]
+" type="org.apache.spark.sql.AnalysisException">org.apache.spark.sql.AnalysisException: cannot resolve &apos;named_struct()&apos; due to data type mismatch: input to function named_struct requires at least one argument;;
+&apos;SerializeFromObject [if (isnull(assertnotnull(input[0, bdtc.lab2.UserRecord, true]).getDate)) null else named_struct() AS date#15, staticinvoke(class org.apache.spark.unsafe.types.UTF8String, StringType, fromString, assertnotnull(input[0, bdtc.lab2.UserRecord, true]).getMsg, true, false) AS msg#16, staticinvoke(class org.apache.spark.unsafe.types.UTF8String, StringType, fromString, assertnotnull(input[0, bdtc.lab2.UserRecord, true]).getReceiverUser, true, false) AS receiverUser#17, staticinvoke(class org.apache.spark.unsafe.types.UTF8String, StringType, fromString, assertnotnull(input[0, bdtc.lab2.UserRecord, true]).getSenderUser, true, false) AS senderUser#18]
++- MapElements bdtc.lab2.AvgPerGroupUserCounter$$Lambda$26/1794893473@42c54bad, class java.lang.String, [StructField(value,StringType,true)], obj#14: bdtc.lab2.UserRecord
+   +- DeserializeToObject cast(value#7 as string).toString, obj#13: java.lang.String
+      +- AnalysisBarrier
+            +- SerializeFromObject [staticinvoke(class org.apache.spark.unsafe.types.UTF8String, StringType, fromString, input[0, java.lang.String, true], true, false) AS value#7]
+               +- MapElements bdtc.lab2.AvgPerGroupUserCounter$$Lambda$25/1415835701@2e3f324e, class java.lang.String, [StructField(value,StringType,true)], obj#6: java.lang.String
+                  +- DeserializeToObject cast(value#2 as string).toString, obj#5: java.lang.String
+                     +- SerializeFromObject [staticinvoke(class org.apache.spark.unsafe.types.UTF8String, StringType, fromString, input[0, java.lang.String, true], true, false) AS value#2]
+                        +- ExternalRDD [obj#1]
+
+	at org.apache.spark.sql.catalyst.analysis.package$AnalysisErrorAt.failAnalysis(package.scala:42)
+	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis$$anonfun$checkAnalysis$1$$anonfun$apply$2.applyOrElse(CheckAnalysis.scala:93)
+	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis$$anonfun$checkAnalysis$1$$anonfun$apply$2.applyOrElse(CheckAnalysis.scala:85)
+	at org.apache.spark.sql.catalyst.trees.TreeNode$$anonfun$transformUp$1.apply(TreeNode.scala:289)
+	at org.apache.spark.sql.catalyst.trees.TreeNode$$anonfun$transformUp$1.apply(TreeNode.scala:289)
+	at org.apache.spark.sql.catalyst.trees.CurrentOrigin$.withOrigin(TreeNode.scala:70)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.transformUp(TreeNode.scala:288)
+	at org.apache.spark.sql.catalyst.trees.TreeNode$$anonfun$3.apply(TreeNode.scala:286)
+	at org.apache.spark.sql.catalyst.trees.TreeNode$$anonfun$3.apply(TreeNode.scala:286)
+	at org.apache.spark.sql.catalyst.trees.TreeNode$$anonfun$4.apply(TreeNode.scala:306)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.mapProductIterator(TreeNode.scala:187)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.mapChildren(TreeNode.scala:304)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.transformUp(TreeNode.scala:286)
+	at org.apache.spark.sql.catalyst.trees.TreeNode$$anonfun$3.apply(TreeNode.scala:286)
+	at org.apache.spark.sql.catalyst.trees.TreeNode$$anonfun$3.apply(TreeNode.scala:286)
+	at org.apache.spark.sql.catalyst.trees.TreeNode$$anonfun$4.apply(TreeNode.scala:306)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.mapProductIterator(TreeNode.scala:187)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.mapChildren(TreeNode.scala:304)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.transformUp(TreeNode.scala:286)
+	at org.apache.spark.sql.catalyst.plans.QueryPlan$$anonfun$transformExpressionsUp$1.apply(QueryPlan.scala:95)
+	at org.apache.spark.sql.catalyst.plans.QueryPlan$$anonfun$transformExpressionsUp$1.apply(QueryPlan.scala:95)
+	at org.apache.spark.sql.catalyst.plans.QueryPlan$$anonfun$1.apply(QueryPlan.scala:107)
+	at org.apache.spark.sql.catalyst.plans.QueryPlan$$anonfun$1.apply(QueryPlan.scala:107)
+	at org.apache.spark.sql.catalyst.trees.CurrentOrigin$.withOrigin(TreeNode.scala:70)
+	at org.apache.spark.sql.catalyst.plans.QueryPlan.transformExpression$1(QueryPlan.scala:106)
+	at org.apache.spark.sql.catalyst.plans.QueryPlan.org$apache$spark$sql$catalyst$plans$QueryPlan$$recursiveTransform$1(QueryPlan.scala:118)
+	at org.apache.spark.sql.catalyst.plans.QueryPlan$$anonfun$org$apache$spark$sql$catalyst$plans$QueryPlan$$recursiveTransform$1$1.apply(QueryPlan.scala:122)
+	at scala.collection.TraversableLike$$anonfun$map$1.apply(TraversableLike.scala:234)
+	at scala.collection.TraversableLike$$anonfun$map$1.apply(TraversableLike.scala:234)
+	at scala.collection.immutable.List.foreach(List.scala:381)
+	at scala.collection.TraversableLike$class.map(TraversableLike.scala:234)
+	at scala.collection.immutable.List.map(List.scala:285)
+	at org.apache.spark.sql.catalyst.plans.QueryPlan.org$apache$spark$sql$catalyst$plans$QueryPlan$$recursiveTransform$1(QueryPlan.scala:122)
+	at org.apache.spark.sql.catalyst.plans.QueryPlan$$anonfun$2.apply(QueryPlan.scala:127)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.mapProductIterator(TreeNode.scala:187)
+	at org.apache.spark.sql.catalyst.plans.QueryPlan.mapExpressions(QueryPlan.scala:127)
+	at org.apache.spark.sql.catalyst.plans.QueryPlan.transformExpressionsUp(QueryPlan.scala:95)
+	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis$$anonfun$checkAnalysis$1.apply(CheckAnalysis.scala:85)
+	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis$$anonfun$checkAnalysis$1.apply(CheckAnalysis.scala:80)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.foreachUp(TreeNode.scala:127)
+	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis$class.checkAnalysis(CheckAnalysis.scala:80)
+	at org.apache.spark.sql.catalyst.analysis.Analyzer.checkAnalysis(Analyzer.scala:92)
+	at org.apache.spark.sql.catalyst.analysis.Analyzer.executeAndCheck(Analyzer.scala:105)
+	at org.apache.spark.sql.execution.QueryExecution.analyzed$lzycompute(QueryExecution.scala:57)
+	at org.apache.spark.sql.execution.QueryExecution.analyzed(QueryExecution.scala:55)
+	at org.apache.spark.sql.execution.QueryExecution.assertAnalyzed(QueryExecution.scala:47)
+	at org.apache.spark.sql.Dataset.&lt;init&gt;(Dataset.scala:172)
+	at org.apache.spark.sql.Dataset.&lt;init&gt;(Dataset.scala:178)
+	at org.apache.spark.sql.Dataset$.apply(Dataset.scala:65)
+	at org.apache.spark.sql.Dataset.withTypedPlan(Dataset.scala:3301)
+	at org.apache.spark.sql.Dataset.map(Dataset.scala:2569)
+	at bdtc.lab2.AvgPerGroupUserCounter.countAvgPerGroupUser(AvgPerGroupUserCounter.java:54)
+	at bdtc.lab2.SparkTest.testThreeLogs(SparkTest.java:78)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</error>
+    <system-err>Using Spark&apos;s default log4j profile: org/apache/spark/log4j-defaults.properties
+22/05/03 11:48:41 WARN Utils: Your hostname, localhost.localdomain resolves to a loopback address: 127.0.0.1; using 192.168.110.128 instead (on interface ens33)
+22/05/03 11:48:41 WARN Utils: Set SPARK_LOCAL_IP if you need to bind to another address
+22/05/03 11:48:41 INFO SparkContext: Running Spark version 2.3.1
+22/05/03 11:48:41 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+22/05/03 11:48:42 INFO SparkContext: Submitted application: SparkSQLApplication
+22/05/03 11:48:42 INFO SecurityManager: Changing view acls to: root
+22/05/03 11:48:42 INFO SecurityManager: Changing modify acls to: root
+22/05/03 11:48:42 INFO SecurityManager: Changing view acls groups to: 
+22/05/03 11:48:42 INFO SecurityManager: Changing modify acls groups to: 
+22/05/03 11:48:42 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(root); groups with view permissions: Set(); users  with modify permissions: Set(root); groups with modify permissions: Set()
+22/05/03 11:48:43 INFO Utils: Successfully started service &apos;sparkDriver&apos; on port 39884.
+22/05/03 11:48:43 INFO SparkEnv: Registering MapOutputTracker
+22/05/03 11:48:43 INFO SparkEnv: Registering BlockManagerMaster
+22/05/03 11:48:43 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+22/05/03 11:48:43 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+22/05/03 11:48:43 INFO DiskBlockManager: Created local directory at /tmp/blockmgr-29992f14-5920-485b-9903-91355fe199cd
+22/05/03 11:48:43 INFO MemoryStore: MemoryStore started with capacity 197.7 MB
+22/05/03 11:48:43 INFO SparkEnv: Registering OutputCommitCoordinator
+22/05/03 11:48:43 INFO Utils: Successfully started service &apos;SparkUI&apos; on port 4040.
+22/05/03 11:48:43 INFO SparkUI: Bound SparkUI to 0.0.0.0, and started at http://192.168.110.128:4040
+22/05/03 11:48:44 INFO Executor: Starting executor ID driver on host localhost
+22/05/03 11:48:44 INFO Utils: Successfully started service &apos;org.apache.spark.network.netty.NettyBlockTransferService&apos; on port 37620.
+22/05/03 11:48:44 INFO NettyBlockTransferService: Server created on 192.168.110.128:37620
+22/05/03 11:48:44 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+22/05/03 11:48:44 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 192.168.110.128, 37620, None)
+22/05/03 11:48:44 INFO BlockManagerMasterEndpoint: Registering block manager 192.168.110.128:37620 with 197.7 MB RAM, BlockManagerId(driver, 192.168.110.128, 37620, None)
+22/05/03 11:48:44 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 192.168.110.128, 37620, None)
+22/05/03 11:48:44 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, 192.168.110.128, 37620, None)
+22/05/03 11:48:48 INFO SharedState: Setting hive.metastore.warehouse.dir (&apos;null&apos;) to the value of spark.sql.warehouse.dir (&apos;file:/root/lab2/scripts/../spark-warehouse&apos;).
+22/05/03 11:48:48 INFO SharedState: Warehouse path is &apos;file:/root/lab2/scripts/../spark-warehouse&apos;.
+22/05/03 11:48:49 INFO StateStoreCoordinatorRef: Registered StateStoreCoordinator endpoint
+</system-err>
+  </testcase>
+  <testcase classname="bdtc.lab2.SparkTest" name="testTwoLogsSameTime" time="0.1">
+    <error message="cannot resolve &apos;named_struct()&apos; due to data type mismatch: input to function named_struct requires at least one argument;;
+&apos;SerializeFromObject [if (isnull(assertnotnull(input[0, bdtc.lab2.UserRecord, true]).getDate)) null else named_struct() AS date#34, staticinvoke(class org.apache.spark.unsafe.types.UTF8String, StringType, fromString, assertnotnull(input[0, bdtc.lab2.UserRecord, true]).getMsg, true, false) AS msg#35, staticinvoke(class org.apache.spark.unsafe.types.UTF8String, StringType, fromString, assertnotnull(input[0, bdtc.lab2.UserRecord, true]).getReceiverUser, true, false) AS receiverUser#36, staticinvoke(class org.apache.spark.unsafe.types.UTF8String, StringType, fromString, assertnotnull(input[0, bdtc.lab2.UserRecord, true]).getSenderUser, true, false) AS senderUser#37]
++- MapElements bdtc.lab2.AvgPerGroupUserCounter$$Lambda$26/1794893473@42c54bad, class java.lang.String, [StructField(value,StringType,true)], obj#33: bdtc.lab2.UserRecord
+   +- DeserializeToObject cast(value#26 as string).toString, obj#32: java.lang.String
+      +- AnalysisBarrier
+            +- SerializeFromObject [staticinvoke(class org.apache.spark.unsafe.types.UTF8String, StringType, fromString, input[0, java.lang.String, true], true, false) AS value#26]
+               +- MapElements bdtc.lab2.AvgPerGroupUserCounter$$Lambda$25/1415835701@2e3f324e, class java.lang.String, [StructField(value,StringType,true)], obj#25: java.lang.String
+                  +- DeserializeToObject cast(value#21 as string).toString, obj#24: java.lang.String
+                     +- SerializeFromObject [staticinvoke(class org.apache.spark.unsafe.types.UTF8String, StringType, fromString, input[0, java.lang.String, true], true, false) AS value#21]
+                        +- ExternalRDD [obj#20]
+" type="org.apache.spark.sql.AnalysisException">org.apache.spark.sql.AnalysisException: cannot resolve &apos;named_struct()&apos; due to data type mismatch: input to function named_struct requires at least one argument;;
+&apos;SerializeFromObject [if (isnull(assertnotnull(input[0, bdtc.lab2.UserRecord, true]).getDate)) null else named_struct() AS date#34, staticinvoke(class org.apache.spark.unsafe.types.UTF8String, StringType, fromString, assertnotnull(input[0, bdtc.lab2.UserRecord, true]).getMsg, true, false) AS msg#35, staticinvoke(class org.apache.spark.unsafe.types.UTF8String, StringType, fromString, assertnotnull(input[0, bdtc.lab2.UserRecord, true]).getReceiverUser, true, false) AS receiverUser#36, staticinvoke(class org.apache.spark.unsafe.types.UTF8String, StringType, fromString, assertnotnull(input[0, bdtc.lab2.UserRecord, true]).getSenderUser, true, false) AS senderUser#37]
++- MapElements bdtc.lab2.AvgPerGroupUserCounter$$Lambda$26/1794893473@42c54bad, class java.lang.String, [StructField(value,StringType,true)], obj#33: bdtc.lab2.UserRecord
+   +- DeserializeToObject cast(value#26 as string).toString, obj#32: java.lang.String
+      +- AnalysisBarrier
+            +- SerializeFromObject [staticinvoke(class org.apache.spark.unsafe.types.UTF8String, StringType, fromString, input[0, java.lang.String, true], true, false) AS value#26]
+               +- MapElements bdtc.lab2.AvgPerGroupUserCounter$$Lambda$25/1415835701@2e3f324e, class java.lang.String, [StructField(value,StringType,true)], obj#25: java.lang.String
+                  +- DeserializeToObject cast(value#21 as string).toString, obj#24: java.lang.String
+                     +- SerializeFromObject [staticinvoke(class org.apache.spark.unsafe.types.UTF8String, StringType, fromString, input[0, java.lang.String, true], true, false) AS value#21]
+                        +- ExternalRDD [obj#20]
+
+	at org.apache.spark.sql.catalyst.analysis.package$AnalysisErrorAt.failAnalysis(package.scala:42)
+	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis$$anonfun$checkAnalysis$1$$anonfun$apply$2.applyOrElse(CheckAnalysis.scala:93)
+	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis$$anonfun$checkAnalysis$1$$anonfun$apply$2.applyOrElse(CheckAnalysis.scala:85)
+	at org.apache.spark.sql.catalyst.trees.TreeNode$$anonfun$transformUp$1.apply(TreeNode.scala:289)
+	at org.apache.spark.sql.catalyst.trees.TreeNode$$anonfun$transformUp$1.apply(TreeNode.scala:289)
+	at org.apache.spark.sql.catalyst.trees.CurrentOrigin$.withOrigin(TreeNode.scala:70)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.transformUp(TreeNode.scala:288)
+	at org.apache.spark.sql.catalyst.trees.TreeNode$$anonfun$3.apply(TreeNode.scala:286)
+	at org.apache.spark.sql.catalyst.trees.TreeNode$$anonfun$3.apply(TreeNode.scala:286)
+	at org.apache.spark.sql.catalyst.trees.TreeNode$$anonfun$4.apply(TreeNode.scala:306)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.mapProductIterator(TreeNode.scala:187)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.mapChildren(TreeNode.scala:304)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.transformUp(TreeNode.scala:286)
+	at org.apache.spark.sql.catalyst.trees.TreeNode$$anonfun$3.apply(TreeNode.scala:286)
+	at org.apache.spark.sql.catalyst.trees.TreeNode$$anonfun$3.apply(TreeNode.scala:286)
+	at org.apache.spark.sql.catalyst.trees.TreeNode$$anonfun$4.apply(TreeNode.scala:306)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.mapProductIterator(TreeNode.scala:187)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.mapChildren(TreeNode.scala:304)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.transformUp(TreeNode.scala:286)
+	at org.apache.spark.sql.catalyst.plans.QueryPlan$$anonfun$transformExpressionsUp$1.apply(QueryPlan.scala:95)
+	at org.apache.spark.sql.catalyst.plans.QueryPlan$$anonfun$transformExpressionsUp$1.apply(QueryPlan.scala:95)
+	at org.apache.spark.sql.catalyst.plans.QueryPlan$$anonfun$1.apply(QueryPlan.scala:107)
+	at org.apache.spark.sql.catalyst.plans.QueryPlan$$anonfun$1.apply(QueryPlan.scala:107)
+	at org.apache.spark.sql.catalyst.trees.CurrentOrigin$.withOrigin(TreeNode.scala:70)
+	at org.apache.spark.sql.catalyst.plans.QueryPlan.transformExpression$1(QueryPlan.scala:106)
+	at org.apache.spark.sql.catalyst.plans.QueryPlan.org$apache$spark$sql$catalyst$plans$QueryPlan$$recursiveTransform$1(QueryPlan.scala:118)
+	at org.apache.spark.sql.catalyst.plans.QueryPlan$$anonfun$org$apache$spark$sql$catalyst$plans$QueryPlan$$recursiveTransform$1$1.apply(QueryPlan.scala:122)
+	at scala.collection.TraversableLike$$anonfun$map$1.apply(TraversableLike.scala:234)
+	at scala.collection.TraversableLike$$anonfun$map$1.apply(TraversableLike.scala:234)
+	at scala.collection.immutable.List.foreach(List.scala:381)
+	at scala.collection.TraversableLike$class.map(TraversableLike.scala:234)
+	at scala.collection.immutable.List.map(List.scala:285)
+	at org.apache.spark.sql.catalyst.plans.QueryPlan.org$apache$spark$sql$catalyst$plans$QueryPlan$$recursiveTransform$1(QueryPlan.scala:122)
+	at org.apache.spark.sql.catalyst.plans.QueryPlan$$anonfun$2.apply(QueryPlan.scala:127)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.mapProductIterator(TreeNode.scala:187)
+	at org.apache.spark.sql.catalyst.plans.QueryPlan.mapExpressions(QueryPlan.scala:127)
+	at org.apache.spark.sql.catalyst.plans.QueryPlan.transformExpressionsUp(QueryPlan.scala:95)
+	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis$$anonfun$checkAnalysis$1.apply(CheckAnalysis.scala:85)
+	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis$$anonfun$checkAnalysis$1.apply(CheckAnalysis.scala:80)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.foreachUp(TreeNode.scala:127)
+	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis$class.checkAnalysis(CheckAnalysis.scala:80)
+	at org.apache.spark.sql.catalyst.analysis.Analyzer.checkAnalysis(Analyzer.scala:92)
+	at org.apache.spark.sql.catalyst.analysis.Analyzer.executeAndCheck(Analyzer.scala:105)
+	at org.apache.spark.sql.execution.QueryExecution.analyzed$lzycompute(QueryExecution.scala:57)
+	at org.apache.spark.sql.execution.QueryExecution.analyzed(QueryExecution.scala:55)
+	at org.apache.spark.sql.execution.QueryExecution.assertAnalyzed(QueryExecution.scala:47)
+	at org.apache.spark.sql.Dataset.&lt;init&gt;(Dataset.scala:172)
+	at org.apache.spark.sql.Dataset.&lt;init&gt;(Dataset.scala:178)
+	at org.apache.spark.sql.Dataset$.apply(Dataset.scala:65)
+	at org.apache.spark.sql.Dataset.withTypedPlan(Dataset.scala:3301)
+	at org.apache.spark.sql.Dataset.map(Dataset.scala:2569)
+	at bdtc.lab2.AvgPerGroupUserCounter.countAvgPerGroupUser(AvgPerGroupUserCounter.java:54)
+	at bdtc.lab2.SparkTest.testTwoLogsSameTime(SparkTest.java:46)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</error>
+    <system-err>22/05/03 11:48:49 WARN SparkSession$Builder: Using an existing SparkSession; some configuration may not take effect.
+</system-err>
+  </testcase>
+  <testcase classname="bdtc.lab2.SparkTest" name="testTwoLogsDifferentTime" time="0.096">
+    <error message="cannot resolve &apos;named_struct()&apos; due to data type mismatch: input to function named_struct requires at least one argument;;
+&apos;SerializeFromObject [if (isnull(assertnotnull(input[0, bdtc.lab2.UserRecord, true]).getDate)) null else named_struct() AS date#53, staticinvoke(class org.apache.spark.unsafe.types.UTF8String, StringType, fromString, assertnotnull(input[0, bdtc.lab2.UserRecord, true]).getMsg, true, false) AS msg#54, staticinvoke(class org.apache.spark.unsafe.types.UTF8String, StringType, fromString, assertnotnull(input[0, bdtc.lab2.UserRecord, true]).getReceiverUser, true, false) AS receiverUser#55, staticinvoke(class org.apache.spark.unsafe.types.UTF8String, StringType, fromString, assertnotnull(input[0, bdtc.lab2.UserRecord, true]).getSenderUser, true, false) AS senderUser#56]
++- MapElements bdtc.lab2.AvgPerGroupUserCounter$$Lambda$26/1794893473@42c54bad, class java.lang.String, [StructField(value,StringType,true)], obj#52: bdtc.lab2.UserRecord
+   +- DeserializeToObject cast(value#45 as string).toString, obj#51: java.lang.String
+      +- AnalysisBarrier
+            +- SerializeFromObject [staticinvoke(class org.apache.spark.unsafe.types.UTF8String, StringType, fromString, input[0, java.lang.String, true], true, false) AS value#45]
+               +- MapElements bdtc.lab2.AvgPerGroupUserCounter$$Lambda$25/1415835701@2e3f324e, class java.lang.String, [StructField(value,StringType,true)], obj#44: java.lang.String
+                  +- DeserializeToObject cast(value#40 as string).toString, obj#43: java.lang.String
+                     +- SerializeFromObject [staticinvoke(class org.apache.spark.unsafe.types.UTF8String, StringType, fromString, input[0, java.lang.String, true], true, false) AS value#40]
+                        +- ExternalRDD [obj#39]
+" type="org.apache.spark.sql.AnalysisException">org.apache.spark.sql.AnalysisException: cannot resolve &apos;named_struct()&apos; due to data type mismatch: input to function named_struct requires at least one argument;;
+&apos;SerializeFromObject [if (isnull(assertnotnull(input[0, bdtc.lab2.UserRecord, true]).getDate)) null else named_struct() AS date#53, staticinvoke(class org.apache.spark.unsafe.types.UTF8String, StringType, fromString, assertnotnull(input[0, bdtc.lab2.UserRecord, true]).getMsg, true, false) AS msg#54, staticinvoke(class org.apache.spark.unsafe.types.UTF8String, StringType, fromString, assertnotnull(input[0, bdtc.lab2.UserRecord, true]).getReceiverUser, true, false) AS receiverUser#55, staticinvoke(class org.apache.spark.unsafe.types.UTF8String, StringType, fromString, assertnotnull(input[0, bdtc.lab2.UserRecord, true]).getSenderUser, true, false) AS senderUser#56]
++- MapElements bdtc.lab2.AvgPerGroupUserCounter$$Lambda$26/1794893473@42c54bad, class java.lang.String, [StructField(value,StringType,true)], obj#52: bdtc.lab2.UserRecord
+   +- DeserializeToObject cast(value#45 as string).toString, obj#51: java.lang.String
+      +- AnalysisBarrier
+            +- SerializeFromObject [staticinvoke(class org.apache.spark.unsafe.types.UTF8String, StringType, fromString, input[0, java.lang.String, true], true, false) AS value#45]
+               +- MapElements bdtc.lab2.AvgPerGroupUserCounter$$Lambda$25/1415835701@2e3f324e, class java.lang.String, [StructField(value,StringType,true)], obj#44: java.lang.String
+                  +- DeserializeToObject cast(value#40 as string).toString, obj#43: java.lang.String
+                     +- SerializeFromObject [staticinvoke(class org.apache.spark.unsafe.types.UTF8String, StringType, fromString, input[0, java.lang.String, true], true, false) AS value#40]
+                        +- ExternalRDD [obj#39]
+
+	at org.apache.spark.sql.catalyst.analysis.package$AnalysisErrorAt.failAnalysis(package.scala:42)
+	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis$$anonfun$checkAnalysis$1$$anonfun$apply$2.applyOrElse(CheckAnalysis.scala:93)
+	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis$$anonfun$checkAnalysis$1$$anonfun$apply$2.applyOrElse(CheckAnalysis.scala:85)
+	at org.apache.spark.sql.catalyst.trees.TreeNode$$anonfun$transformUp$1.apply(TreeNode.scala:289)
+	at org.apache.spark.sql.catalyst.trees.TreeNode$$anonfun$transformUp$1.apply(TreeNode.scala:289)
+	at org.apache.spark.sql.catalyst.trees.CurrentOrigin$.withOrigin(TreeNode.scala:70)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.transformUp(TreeNode.scala:288)
+	at org.apache.spark.sql.catalyst.trees.TreeNode$$anonfun$3.apply(TreeNode.scala:286)
+	at org.apache.spark.sql.catalyst.trees.TreeNode$$anonfun$3.apply(TreeNode.scala:286)
+	at org.apache.spark.sql.catalyst.trees.TreeNode$$anonfun$4.apply(TreeNode.scala:306)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.mapProductIterator(TreeNode.scala:187)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.mapChildren(TreeNode.scala:304)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.transformUp(TreeNode.scala:286)
+	at org.apache.spark.sql.catalyst.trees.TreeNode$$anonfun$3.apply(TreeNode.scala:286)
+	at org.apache.spark.sql.catalyst.trees.TreeNode$$anonfun$3.apply(TreeNode.scala:286)
+	at org.apache.spark.sql.catalyst.trees.TreeNode$$anonfun$4.apply(TreeNode.scala:306)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.mapProductIterator(TreeNode.scala:187)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.mapChildren(TreeNode.scala:304)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.transformUp(TreeNode.scala:286)
+	at org.apache.spark.sql.catalyst.plans.QueryPlan$$anonfun$transformExpressionsUp$1.apply(QueryPlan.scala:95)
+	at org.apache.spark.sql.catalyst.plans.QueryPlan$$anonfun$transformExpressionsUp$1.apply(QueryPlan.scala:95)
+	at org.apache.spark.sql.catalyst.plans.QueryPlan$$anonfun$1.apply(QueryPlan.scala:107)
+	at org.apache.spark.sql.catalyst.plans.QueryPlan$$anonfun$1.apply(QueryPlan.scala:107)
+	at org.apache.spark.sql.catalyst.trees.CurrentOrigin$.withOrigin(TreeNode.scala:70)
+	at org.apache.spark.sql.catalyst.plans.QueryPlan.transformExpression$1(QueryPlan.scala:106)
+	at org.apache.spark.sql.catalyst.plans.QueryPlan.org$apache$spark$sql$catalyst$plans$QueryPlan$$recursiveTransform$1(QueryPlan.scala:118)
+	at org.apache.spark.sql.catalyst.plans.QueryPlan$$anonfun$org$apache$spark$sql$catalyst$plans$QueryPlan$$recursiveTransform$1$1.apply(QueryPlan.scala:122)
+	at scala.collection.TraversableLike$$anonfun$map$1.apply(TraversableLike.scala:234)
+	at scala.collection.TraversableLike$$anonfun$map$1.apply(TraversableLike.scala:234)
+	at scala.collection.immutable.List.foreach(List.scala:381)
+	at scala.collection.TraversableLike$class.map(TraversableLike.scala:234)
+	at scala.collection.immutable.List.map(List.scala:285)
+	at org.apache.spark.sql.catalyst.plans.QueryPlan.org$apache$spark$sql$catalyst$plans$QueryPlan$$recursiveTransform$1(QueryPlan.scala:122)
+	at org.apache.spark.sql.catalyst.plans.QueryPlan$$anonfun$2.apply(QueryPlan.scala:127)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.mapProductIterator(TreeNode.scala:187)
+	at org.apache.spark.sql.catalyst.plans.QueryPlan.mapExpressions(QueryPlan.scala:127)
+	at org.apache.spark.sql.catalyst.plans.QueryPlan.transformExpressionsUp(QueryPlan.scala:95)
+	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis$$anonfun$checkAnalysis$1.apply(CheckAnalysis.scala:85)
+	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis$$anonfun$checkAnalysis$1.apply(CheckAnalysis.scala:80)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.foreachUp(TreeNode.scala:127)
+	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis$class.checkAnalysis(CheckAnalysis.scala:80)
+	at org.apache.spark.sql.catalyst.analysis.Analyzer.checkAnalysis(Analyzer.scala:92)
+	at org.apache.spark.sql.catalyst.analysis.Analyzer.executeAndCheck(Analyzer.scala:105)
+	at org.apache.spark.sql.execution.QueryExecution.analyzed$lzycompute(QueryExecution.scala:57)
+	at org.apache.spark.sql.execution.QueryExecution.analyzed(QueryExecution.scala:55)
+	at org.apache.spark.sql.execution.QueryExecution.assertAnalyzed(QueryExecution.scala:47)
+	at org.apache.spark.sql.Dataset.&lt;init&gt;(Dataset.scala:172)
+	at org.apache.spark.sql.Dataset.&lt;init&gt;(Dataset.scala:178)
+	at org.apache.spark.sql.Dataset$.apply(Dataset.scala:65)
+	at org.apache.spark.sql.Dataset.withTypedPlan(Dataset.scala:3301)
+	at org.apache.spark.sql.Dataset.map(Dataset.scala:2569)
+	at bdtc.lab2.AvgPerGroupUserCounter.countAvgPerGroupUser(AvgPerGroupUserCounter.java:54)
+	at bdtc.lab2.SparkTest.testTwoLogsDifferentTime(SparkTest.java:59)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</error>
+    <system-err>22/05/03 11:48:49 WARN SparkSession$Builder: Using an existing SparkSession; some configuration may not take effect.
+</system-err>
+  </testcase>
+  <testcase classname="bdtc.lab2.SparkTest" name="testOneLog" time="0.07">
+    <error message="cannot resolve &apos;named_struct()&apos; due to data type mismatch: input to function named_struct requires at least one argument;;
+&apos;SerializeFromObject [if (isnull(assertnotnull(input[0, bdtc.lab2.UserRecord, true]).getDate)) null else named_struct() AS date#72, staticinvoke(class org.apache.spark.unsafe.types.UTF8String, StringType, fromString, assertnotnull(input[0, bdtc.lab2.UserRecord, true]).getMsg, true, false) AS msg#73, staticinvoke(class org.apache.spark.unsafe.types.UTF8String, StringType, fromString, assertnotnull(input[0, bdtc.lab2.UserRecord, true]).getReceiverUser, true, false) AS receiverUser#74, staticinvoke(class org.apache.spark.unsafe.types.UTF8String, StringType, fromString, assertnotnull(input[0, bdtc.lab2.UserRecord, true]).getSenderUser, true, false) AS senderUser#75]
++- MapElements bdtc.lab2.AvgPerGroupUserCounter$$Lambda$26/1794893473@42c54bad, class java.lang.String, [StructField(value,StringType,true)], obj#71: bdtc.lab2.UserRecord
+   +- DeserializeToObject cast(value#64 as string).toString, obj#70: java.lang.String
+      +- AnalysisBarrier
+            +- SerializeFromObject [staticinvoke(class org.apache.spark.unsafe.types.UTF8String, StringType, fromString, input[0, java.lang.String, true], true, false) AS value#64]
+               +- MapElements bdtc.lab2.AvgPerGroupUserCounter$$Lambda$25/1415835701@2e3f324e, class java.lang.String, [StructField(value,StringType,true)], obj#63: java.lang.String
+                  +- DeserializeToObject cast(value#59 as string).toString, obj#62: java.lang.String
+                     +- SerializeFromObject [staticinvoke(class org.apache.spark.unsafe.types.UTF8String, StringType, fromString, input[0, java.lang.String, true], true, false) AS value#59]
+                        +- ExternalRDD [obj#58]
+" type="org.apache.spark.sql.AnalysisException">org.apache.spark.sql.AnalysisException: cannot resolve &apos;named_struct()&apos; due to data type mismatch: input to function named_struct requires at least one argument;;
+&apos;SerializeFromObject [if (isnull(assertnotnull(input[0, bdtc.lab2.UserRecord, true]).getDate)) null else named_struct() AS date#72, staticinvoke(class org.apache.spark.unsafe.types.UTF8String, StringType, fromString, assertnotnull(input[0, bdtc.lab2.UserRecord, true]).getMsg, true, false) AS msg#73, staticinvoke(class org.apache.spark.unsafe.types.UTF8String, StringType, fromString, assertnotnull(input[0, bdtc.lab2.UserRecord, true]).getReceiverUser, true, false) AS receiverUser#74, staticinvoke(class org.apache.spark.unsafe.types.UTF8String, StringType, fromString, assertnotnull(input[0, bdtc.lab2.UserRecord, true]).getSenderUser, true, false) AS senderUser#75]
++- MapElements bdtc.lab2.AvgPerGroupUserCounter$$Lambda$26/1794893473@42c54bad, class java.lang.String, [StructField(value,StringType,true)], obj#71: bdtc.lab2.UserRecord
+   +- DeserializeToObject cast(value#64 as string).toString, obj#70: java.lang.String
+      +- AnalysisBarrier
+            +- SerializeFromObject [staticinvoke(class org.apache.spark.unsafe.types.UTF8String, StringType, fromString, input[0, java.lang.String, true], true, false) AS value#64]
+               +- MapElements bdtc.lab2.AvgPerGroupUserCounter$$Lambda$25/1415835701@2e3f324e, class java.lang.String, [StructField(value,StringType,true)], obj#63: java.lang.String
+                  +- DeserializeToObject cast(value#59 as string).toString, obj#62: java.lang.String
+                     +- SerializeFromObject [staticinvoke(class org.apache.spark.unsafe.types.UTF8String, StringType, fromString, input[0, java.lang.String, true], true, false) AS value#59]
+                        +- ExternalRDD [obj#58]
+
+	at org.apache.spark.sql.catalyst.analysis.package$AnalysisErrorAt.failAnalysis(package.scala:42)
+	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis$$anonfun$checkAnalysis$1$$anonfun$apply$2.applyOrElse(CheckAnalysis.scala:93)
+	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis$$anonfun$checkAnalysis$1$$anonfun$apply$2.applyOrElse(CheckAnalysis.scala:85)
+	at org.apache.spark.sql.catalyst.trees.TreeNode$$anonfun$transformUp$1.apply(TreeNode.scala:289)
+	at org.apache.spark.sql.catalyst.trees.TreeNode$$anonfun$transformUp$1.apply(TreeNode.scala:289)
+	at org.apache.spark.sql.catalyst.trees.CurrentOrigin$.withOrigin(TreeNode.scala:70)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.transformUp(TreeNode.scala:288)
+	at org.apache.spark.sql.catalyst.trees.TreeNode$$anonfun$3.apply(TreeNode.scala:286)
+	at org.apache.spark.sql.catalyst.trees.TreeNode$$anonfun$3.apply(TreeNode.scala:286)
+	at org.apache.spark.sql.catalyst.trees.TreeNode$$anonfun$4.apply(TreeNode.scala:306)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.mapProductIterator(TreeNode.scala:187)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.mapChildren(TreeNode.scala:304)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.transformUp(TreeNode.scala:286)
+	at org.apache.spark.sql.catalyst.trees.TreeNode$$anonfun$3.apply(TreeNode.scala:286)
+	at org.apache.spark.sql.catalyst.trees.TreeNode$$anonfun$3.apply(TreeNode.scala:286)
+	at org.apache.spark.sql.catalyst.trees.TreeNode$$anonfun$4.apply(TreeNode.scala:306)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.mapProductIterator(TreeNode.scala:187)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.mapChildren(TreeNode.scala:304)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.transformUp(TreeNode.scala:286)
+	at org.apache.spark.sql.catalyst.plans.QueryPlan$$anonfun$transformExpressionsUp$1.apply(QueryPlan.scala:95)
+	at org.apache.spark.sql.catalyst.plans.QueryPlan$$anonfun$transformExpressionsUp$1.apply(QueryPlan.scala:95)
+	at org.apache.spark.sql.catalyst.plans.QueryPlan$$anonfun$1.apply(QueryPlan.scala:107)
+	at org.apache.spark.sql.catalyst.plans.QueryPlan$$anonfun$1.apply(QueryPlan.scala:107)
+	at org.apache.spark.sql.catalyst.trees.CurrentOrigin$.withOrigin(TreeNode.scala:70)
+	at org.apache.spark.sql.catalyst.plans.QueryPlan.transformExpression$1(QueryPlan.scala:106)
+	at org.apache.spark.sql.catalyst.plans.QueryPlan.org$apache$spark$sql$catalyst$plans$QueryPlan$$recursiveTransform$1(QueryPlan.scala:118)
+	at org.apache.spark.sql.catalyst.plans.QueryPlan$$anonfun$org$apache$spark$sql$catalyst$plans$QueryPlan$$recursiveTransform$1$1.apply(QueryPlan.scala:122)
+	at scala.collection.TraversableLike$$anonfun$map$1.apply(TraversableLike.scala:234)
+	at scala.collection.TraversableLike$$anonfun$map$1.apply(TraversableLike.scala:234)
+	at scala.collection.immutable.List.foreach(List.scala:381)
+	at scala.collection.TraversableLike$class.map(TraversableLike.scala:234)
+	at scala.collection.immutable.List.map(List.scala:285)
+	at org.apache.spark.sql.catalyst.plans.QueryPlan.org$apache$spark$sql$catalyst$plans$QueryPlan$$recursiveTransform$1(QueryPlan.scala:122)
+	at org.apache.spark.sql.catalyst.plans.QueryPlan$$anonfun$2.apply(QueryPlan.scala:127)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.mapProductIterator(TreeNode.scala:187)
+	at org.apache.spark.sql.catalyst.plans.QueryPlan.mapExpressions(QueryPlan.scala:127)
+	at org.apache.spark.sql.catalyst.plans.QueryPlan.transformExpressionsUp(QueryPlan.scala:95)
+	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis$$anonfun$checkAnalysis$1.apply(CheckAnalysis.scala:85)
+	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis$$anonfun$checkAnalysis$1.apply(CheckAnalysis.scala:80)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.foreachUp(TreeNode.scala:127)
+	at org.apache.spark.sql.catalyst.analysis.CheckAnalysis$class.checkAnalysis(CheckAnalysis.scala:80)
+	at org.apache.spark.sql.catalyst.analysis.Analyzer.checkAnalysis(Analyzer.scala:92)
+	at org.apache.spark.sql.catalyst.analysis.Analyzer.executeAndCheck(Analyzer.scala:105)
+	at org.apache.spark.sql.execution.QueryExecution.analyzed$lzycompute(QueryExecution.scala:57)
+	at org.apache.spark.sql.execution.QueryExecution.analyzed(QueryExecution.scala:55)
+	at org.apache.spark.sql.execution.QueryExecution.assertAnalyzed(QueryExecution.scala:47)
+	at org.apache.spark.sql.Dataset.&lt;init&gt;(Dataset.scala:172)
+	at org.apache.spark.sql.Dataset.&lt;init&gt;(Dataset.scala:178)
+	at org.apache.spark.sql.Dataset$.apply(Dataset.scala:65)
+	at org.apache.spark.sql.Dataset.withTypedPlan(Dataset.scala:3301)
+	at org.apache.spark.sql.Dataset.map(Dataset.scala:2569)
+	at bdtc.lab2.AvgPerGroupUserCounter.countAvgPerGroupUser(AvgPerGroupUserCounter.java:54)
+	at bdtc.lab2.SparkTest.testOneLog(SparkTest.java:32)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</error>
+    <system-err>22/05/03 11:48:50 WARN SparkSession$Builder: Using an existing SparkSession; some configuration may not take effect.
+</system-err>
+  </testcase>
+</testsuite>
