@@ -1,3 +1,11 @@
+## Описание логики
+
+Ingest technology: Sqoop import
+
+Storage technology: HDFS
+
+Computation technology: Spark
+
 ## Как запустить приложение
 
 На хосте должен быть установлен maven
