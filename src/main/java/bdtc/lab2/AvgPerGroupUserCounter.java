@@ -26,16 +26,11 @@ import static java.time.temporal.ChronoField.YEAR;
 @Slf4j
 public class AvgPerGroupUserCounter {
 
-    // Формат времени  - н-р, 'Oct 26 13:54:06'
-    private static DateTimeFormatter formatter = new DateTimeFormatterBuilder()
-            .appendPattern("MMM dd HH:mm:ss")
-            .parseDefaulting(YEAR, 2018)
-            .toFormatter();
-
     /**
-     * Функция подсчета количества логов разного уровня в час.
-     * Парсит строку лога, в т.ч. уровень логирования и час, в который событие было зафиксировано.
-     * @param groupMap - вход  для анализа
+     * Функция подсчета количества сообщений в группе на пользователя
+     * Парсит строку из PostgreSQL, в т.ч. отправителя,получателя,дата,сообщение(табдлица messages)
+     * @param groupMap - входная таблица-справочник группа-пользователь для анализа
+     * @param messages - входная таблица (содержит поля отправителя,получателя,дата,сообщение(табдлица messages))
      * @return результат подсчета в формате JavaRDD
      */
     public static JavaRDD<Tuple2<String,Integer>> countAvgPerGroupUser(JavaRDD<String> messages,JavaRDD<String> groupMap) {
@@ -72,7 +67,7 @@ public class AvgPerGroupUserCounter {
         });
         JavaPairRDD<String,Integer> grouped = msg.union(msg2);
 
-        // Группирует по значениям часа и уровня логирования Group by sender
+        // Группирует по значениям groupMap, user1 , user2
         JavaPairRDD<String, Integer> t = grouped.reduceByKey((a,b) -> {
            return a + b;
         });
